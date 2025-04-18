@@ -4,8 +4,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
-# ⚠️ Hardcoded API Key (FOR DEMO ONLY)
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Initialize GPT-4 LLM
 llm = ChatOpenAI(
